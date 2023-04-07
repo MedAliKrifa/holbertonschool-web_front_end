@@ -2,30 +2,24 @@
 // Default font size for h1
 h1 {
     font-size: 20px;
-}
 
-// Media query for screens smaller than 960px
-@media (max-width: 960px) {
-    h1 {
+    @media screen and (max-width: 960px) {
         font-size: 18px;
-    }
-}
 
-// Media query for screens smaller than 640px
-@media (max-width: 640px) {
-    h1 {
+    }
+
+    @media screen and (max-width: 640px) {
         font-size: 16px;
-    }
-}
 
-// Media query for screens smaller than 320px
-@media (max-width: 320px) {
-    h1 {
+    }
+
+    @media screen and (max-width: 320px) {
         font-size: 14px;
+
+        &.small {
+            color: #1D1D1D;
+        }
+
     }
 
-    // Styling for h1 tags with class "small"
-    h1.small {
-        color: #1D1D1D;
-    }
 }
