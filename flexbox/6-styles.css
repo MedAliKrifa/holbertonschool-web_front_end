@@ -241,7 +241,6 @@ template {
     /** HEADER **/
     --header-padding: 4rem 0 0;
 
-
     /** FOOTER **/
     --footer-padding: 5rem 0 1rem;
 
@@ -252,7 +251,6 @@ template {
     --nav-item-letter-spacing: .04rem;
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0 0 2rem;
-    ;
     --nav-item-link-hover: var(--color-white);
 
     /** BUTTON **/
@@ -362,7 +360,6 @@ a:active {
 
 /* Grid
       ============================= */
-
 .row {
     display: flex;
 }
@@ -390,11 +387,11 @@ ul.row {
 
 
 .nav {
-    display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
     text-align: center;
+    display: flex;
 }
 
 .nav .nav-item {
@@ -437,19 +434,18 @@ ul.row {
 
 /* Header
       ============================= */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
 
 .header {
     padding: var(--header-padding);
     position: relative;
     z-index: 3;
-    background: transparent !important;
+    background: transparent;
 }
 
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-}
 
 /* Footer
       ============================= */
@@ -554,6 +550,7 @@ ul.row {
 .section-latest-news .row {
     flex-direction: row-reverse;
 }
+
 
 /* Section SERVICES ============================= */
 
