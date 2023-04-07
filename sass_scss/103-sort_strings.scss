@@ -1,2 +1,8 @@
 /* assigns Font size 20px to h1 tags && Font size 14px to h1 tags, when your screen width is smaller than 320px */
 $list_to_sort: john anna zoe kim felicia carrie;
+
+@debug "Original list: #{$list_to_sort}";
+
+$list_sorted: sort($list_to_sort);
+
+@debug "Sorted list: #{$list_sorted}";
