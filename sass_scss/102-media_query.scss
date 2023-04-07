@@ -1,0 +1,31 @@
+/* Additionally, it includes styling for h1 tags with class "small" when the screen width is smaller than 320px. */
+// Default font size for h1
+h1 {
+    font-size: 20px;
+}
+
+// Media query for screens smaller than 960px
+@media (max-width: 960px) {
+    h1 {
+        font-size: 18px;
+    }
+}
+
+// Media query for screens smaller than 640px
+@media (max-width: 640px) {
+    h1 {
+        font-size: 16px;
+    }
+}
+
+// Media query for screens smaller than 320px
+@media (max-width: 320px) {
+    h1 {
+        font-size: 14px;
+    }
+
+    // Styling for h1 tags with class "small"
+    h1.small {
+        color: #1D1D1D;
+    }
+}
